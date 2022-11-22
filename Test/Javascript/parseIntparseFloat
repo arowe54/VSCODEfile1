@@ -1,0 +1,49 @@
+
+// parseFloat(string)
+// converts the argument to a string, the picks the longest substring from beginning that generates a valid number literal
+
+// all return 3.14
+parseFloat("3.14");
+parseFloat(3.14);
+parseFloat('   3.14   ');
+parseFloat('314e-2');
+parseFloat('0.0314e+2');
+parseFloat("3.14xyz.   "); // if there are characters after the number or invalid characters, it only returns up to that (3.14x returns 3.14)
+parseFloat({
+    toString(){return "3.14";}
+})
+
+// returns NaN if there are no numbers in the argument
+
+// infinity
+parseFloat("Infinity");
+parseFloat("-Infinity");
+
+// returns infinity if arg is outside floating point range (positive or negative)
+parseFloat("1.7976931348623159e+308");
+
+// using parseFloat() with bigInt values converts to a string and parses the string as a floating point, losing precision
+parseFloat(900719925474099267n); // 900719925474099300
+// pass to BigInt() instead, no n
+BigInt("900719925474099267");
+
+
+// parseInt(string, radix)
+// like parseFloat(), but returns an int, with the option to change the base of the int
+
+// all return 15
+parseInt("15", 10);
+parseInt("1111", 2);
+parseInt("17", 8); // 17 = 10+7, 8+7 = 15
+parseInt("12", 13); // 13+2 = 15, 10 + 2 = 12
+
+parseInt("15*3", 10);
+parseInt("15e3", 10); // parse int does not recognize ., *, or e
+
+// parseInt() recognizes hexadecimal numbers with base 16, and also "0x" and "0X" with base 16
+
+
+// radix is the base that the int counts by (optional. default usually base 10, but can be between 2 and 36)
+
+// returns Nan if the argument is not a number
+// returns a number if null or defined is used with a high base like 36

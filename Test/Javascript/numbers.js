@@ -1,3 +1,15 @@
+/*
+supported data types
+number
+Boolean
+BigInt // a number outside of 64-bit floating point format, with the number n at the end
+Null
+Object
+String
+Symbol
+Undefined
+
+
 // operators are the basically the same as java
 // ** are for exponents
 

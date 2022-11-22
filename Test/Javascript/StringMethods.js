@@ -97,3 +97,8 @@ let textArray2 = finalText.split(" "); // split on spaces
 let textArray3 = finalText.split("|"); // split on pipe (or any other character if you want to switch | with that char
 
 console.log(finalText+"\n"+textArray1 + " split on commas\n" + textArray2 +" split on spaces\n" + textArray3 + " split on the pipe");
+
+//join()
+const stringArray = ('I', 'love', 'chocolate');
+let joinedArray = stringArray.join(' '); // joins the stringArray into one string (one value)
+console.log(joinedArray); // 
