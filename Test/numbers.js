@@ -71,3 +71,4 @@ console.log(myNumber.toString(2)); // binary 100000
 // when x == y, x and y are equal; when x === y, checks if x is the same as y
 // comparing two objects always returns false
 // numbers can be objects but you should not do that
+// number() converts everything in parameter to a number if possible
