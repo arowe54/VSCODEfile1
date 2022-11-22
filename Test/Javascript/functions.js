@@ -74,8 +74,14 @@ console.log(add7(1)); // 8
 multiply = (a,b) => a*b;
 console.log(multiply(3,4)); // 12
 
-capitalize = word => word.concat(word.charAt(0).toUpperCase() + word.substring(1).toLowerCase());
-console.log(capitalize("yELlow")) // concatenates "Y" + "ellow" to return a new string called "Yellow"
+capitalize = word => {
+    let secondWord = '';
+    let firstLetter = '';
+    let remainder = '';
+    firstLetter = word.charAt(0).toUpperCase();
+    remainder = word.substring(1).toLowerCase();
+    return secondWord.concat(firstLetter + remainder)};
+console.log(capitalize("yELlow")) // creates empty string and concatenates "Y" + "ellow" to return a new string called "Yellow"
 
-lastLetter = word => word.charAt(word.length()-1);
-console.log("abcd"); // d
+lastLetter = word => word.charAt(word.length-1);
+console.log(lastLetter("abcd")); // d

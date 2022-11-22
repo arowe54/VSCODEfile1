@@ -96,7 +96,7 @@ let message = (age < 3) ? 'Hi, baby!' :
 alert(message);
 
 // last usage
-let favMovie = prompt('What is my favorite movie?');
+let favMovie = prompt('What is my favorite movie?', "Lord of the Rings");
 // basically an if-else statement
 (favMovie == 'Lord of the Rings') ?
     alert('Right!') : alert('Wrong');
