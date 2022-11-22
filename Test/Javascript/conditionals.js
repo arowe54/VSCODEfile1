@@ -12,7 +12,7 @@ alert(a || b || c); // a
 alert(b || d); // d
 
 // short circuits
-false || alert("printed"); // prints
+false || alert("printed"); // prints alert
 true || alert("printed"); // does not print
 
 
@@ -79,8 +79,8 @@ good for an if ... else block
 // condition ? statementForTrue : secondStatementForFalse;
 let isBirthday = true;
 const greeting = isBirthday
-    ? 'Happy Birthday Daniel, have a good day!' 
-    : 'Good Morning Daniel.';
+    ? 'Happy Birthday, have a good day!' 
+    : 'Good Morning.';
 
 console.log(greeting); // prints the happy birthday message
 
@@ -96,7 +96,7 @@ let message = (age < 3) ? 'Hi, baby!' :
 alert(message);
 
 // last usage
-let favPizza = prompt('What is my favorite movie?');
+let favMovie = prompt('What is my favorite movie?');
 // basically an if-else statement
-(favPizza == 'Lord of the Rings') ?
+(favMovie == 'Lord of the Rings') ?
     alert('Right!') : alert('Wrong');

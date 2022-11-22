@@ -3,6 +3,11 @@ message = 'Hello'; // stores String in message
 
 alert(message); // prints message to screen
 
+let bestMovie = prompt("What is the highest grossing movie of all time?", "Avatar"); // asks message with a default value of Avatar in the input box
+
+// prompt does not need a default value
+prompt("You picked" + bestMovie); // tells user their choice from prompt
+
 let user = 'John Rowe';
 age = 25;
 
