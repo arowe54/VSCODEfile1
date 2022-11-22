@@ -2,7 +2,6 @@
 const bigMouth = 'I\'ve got a lot of words';
 /*
 \n is new line
-
 \v is vertical tab
 \t is tab
 \b is backspace
@@ -31,9 +30,8 @@ console.log(`This is the expression\n ${usingExpression}`)
 
 
 function greet(){
-    const name = prompt("What is your name"); // asks user for their name in a message
-    // user inputs their name
-    alert(`Hello ${name}, nice to see you!`);  // displays message to user
+    const name = prompt("What is your name");
+    alert(`Hello ${name}, nice to see you!`);
 }
 
 greet();

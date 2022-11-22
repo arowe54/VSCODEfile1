@@ -5,7 +5,6 @@ alert(message); // prints message to screen
 
 let user = 'John Rowe';
 age = 25;
-message = 'Hello';
 
 // can also do this
 let user2 = 'Andrew Rowe',
@@ -15,21 +14,17 @@ let user2 = 'Andrew Rowe',
 // var is basically the same as let
 
 let hello = 'Hello World';
-message = hello; // copies 'Hello World' from hello into message
+message = hello; // changes message to 'Hello World'
+
+// variables
 /*
-alert(hello);
-alert(message);
-*/
+use camelCase
+variables can only be letters, digits, _ or $
+cannot start with a digit
+cannot use reserved words (ex. let, class, return, function, etc...)
 
-// variables can only be letters, digits, $ or _
-// cannot start with a digit
-// use camelCase
+can use any language, including cryllic and chinese symbols. should use english (national convention)
 
-// can use any language, including cryllic and chinese symbols. should use english (national convention)
-
-// let, class, return, and function are reserved (cannot use)
-
-/*
 older versions of js could use variables without defining them.
 If you put 'use strict', you have to declare variables
 */
@@ -47,8 +42,9 @@ alert(colourGreen)
 
 // if it is not known before loading the file, use regular camelCase
 
-// variable advice from https://javascript.info/variables
 /*
+ advice from https://javascript.info/variables
+
 Use readable names,
 stay away from abbreviations / short names (ex. a, b)
 make it descriptive and concise
