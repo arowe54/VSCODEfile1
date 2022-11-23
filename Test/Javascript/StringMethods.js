@@ -38,8 +38,9 @@ console.log(firstHome + "\n" + secondHome);
 // replace only replaces first instance of the word
 
 // replace is case sensitive
-const badCarChoice = "I don't really want a ferrari because its too expensive";
+const badCarChoice = "I don't ReAlly want a ferrari because its too expensive";
 const goodCarChoice = badCarChoice.replace(/really/i, "don't"); // not case sensitive
+// replaces really with don't. "I don't don't want a ferrari ..."
 
 const reallyGoodCarChoice = goodCarChoice.replace(/don't/g, "really"); // prints 'I really really want a ferrari because its too expensive'
 console.log(reallyGoodCarChoice);
@@ -50,6 +51,12 @@ console.log(reallyGoodCarChoice);
 let pets = "Cats dogs cats Dogs";
 pets = pets.replaceAll(/Cats/g, "Dogs");
 console.log(pets);
+
+// regular expressions
+// if it has / and / around it (ex. /Cats/), it is a regex (regular expression)
+// regular expressions account for very similar instances of the same word (ex. cats, cAts, Cats, CATS, etc...,) 
+// but not when there is a space (ex, cat s)
+
 
 /*
 for a String text;

@@ -90,7 +90,9 @@ let message = (age < 3) ? 'Hi, baby!' :
   (age < 18) ? 'Hello!' :
   (age < 100) ? 'Greetings!' :
   'What an unusual age!';
-// basically an if else, : is else-if, ? runs statement;
+// basically an if else, 
+// : is else-if, 
+// ? runs statement;
 // good for when there is only one command
 
 alert(message);
