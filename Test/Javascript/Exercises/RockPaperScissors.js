@@ -21,6 +21,7 @@ function getComputerChoice() {
             return "Scissors";
     }
 }
+
 let computerChoice = getComputerChoice();
 
 function getPlayerChoice(){
@@ -32,9 +33,6 @@ function getPlayerChoice(){
         } else {} 
     }
 }
-
-
-
 
 function playRound(computerSelection, playerSelection){
     let result = '';
@@ -62,4 +60,3 @@ function playGame(){
     }
     (playerWins > compWins) ? "You Win!" : "You Lose";
 }
-
