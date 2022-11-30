@@ -28,10 +28,72 @@ or Type selectors (ex. div, p, etc...)
     font-family: "sans-serif"; 
 }
 
-/* This is a type selector*/
+/* This is a type selector */
 p {
     font-size: 15px; /* all paragraphs have font-size 15px */
 }
+
+/* This is a class selector */
+.first-class {
+    color: white;
+    background-color: black;
+}
+
+/* applies to all elements of a certain class (named and assigned by you) */
+
+.prison {
+    background-color: yellow;
+    font-size: 30px;
+}
+
+/* This is an ID selector */
+#sample-green {
+    color: green;
+}
+
+/* An element can have multiple classes, but only one ID
+
+/* Grouping Selector */
+/* You can group/combine selectors if they share common properties */
+#sample-red,
+.holidays,
+.christmas {
+    color: red;
+}
+
+/* Chaining Selector */
+/* Chaining selectors select elements with both selectors*/
+
+/* This selects all elements with both holidays and christmas*/
+.holidays.christmas {
+    background-color:lightgreen;
+    font-size: 22px;
+}
+
+/* 
+Grouping selectors apply the properties to all elements with any of the selectors selected
+Chaining selectors apply the properties to only the elements with both selectors selected
+*/
+
+
+/* Combinators */
+/*
+4 types of Combinators
+*/
+
+/* Descendant Combinators */
+/* 
+A single space between selectors.
+Only selects elements if they match the last selector and their parent selects the previous selector before the space
+*/
+
+.ancestor .child {
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
 
 
 
