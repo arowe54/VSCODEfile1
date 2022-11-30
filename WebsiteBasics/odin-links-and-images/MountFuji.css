@@ -1,0 +1,11 @@
+img {
+    height: auto;
+    width: 1900px;
+}
+/* 
+You can adjust the number of pixels in the height and width size.
+The page is roughly 1900px wide
+*/
+/*
+Since both index.html and about.html refer to this stylesheet, the css code applies to both files
+*/
