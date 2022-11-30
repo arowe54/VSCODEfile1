@@ -1,0 +1,37 @@
+/*
+This method uses external CSS (creating another css file and linking to it in HTML)
+
+internal CSS involves using a <style></style> tag
+
+inline CSS involves putting CSS inside the tag
+<div style = "color: white; background-color: black;">...</div>
+
+*/
+/*
+css style follows the format:
+selector {
+    property: value;
+}
+*/
+/*
+Selectors can be of the types: 
+Universal selector (*)
+ID selector
+Class selectors
+or Type selectors (ex. div, p, etc...)
+*/
+
+/* 
+    * is the universal selector (applies to all) 
+*/
+* {
+    font-family: "sans-serif"; 
+}
+
+/* This is a type selector*/
+p {
+    font-size: 15px; /* all paragraphs have font-size 15px */
+}
+
+
+
